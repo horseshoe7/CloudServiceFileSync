@@ -47,6 +47,7 @@
 		DCA54C2225E53BE2001B2887 /* CloudServiceFileSync.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DCA54C2125E53BE2001B2887 /* CloudServiceFileSync.podspec */; };
 		DCA54C3925E55815001B2887 /* DropboxConfigExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54C3825E55815001B2887 /* DropboxConfigExtensions.swift */; };
 		DCB5317825E6598900C45B20 /* DropboxConfigExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB5317625E6598900C45B20 /* DropboxConfigExtensions.swift */; };
+		DCB5318625E65DEA00C45B20 /* SecureTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB5318525E65DEA00C45B20 /* SecureTypes.swift */; };
 		DCE0372025D580AE002803DE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DCE0371F25D580AE002803DE /* README.md */; };
 		DCE0376A25DA7ED2002803DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE0375F25DA7ED2002803DE /* Assets.xcassets */; };
 		DCE0376B25DA7ED2002803DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE0376025DA7ED2002803DE /* LaunchScreen.storyboard */; };
@@ -146,6 +147,7 @@
 		DCA54C2125E53BE2001B2887 /* CloudServiceFileSync.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CloudServiceFileSync.podspec; sourceTree = "<group>"; };
 		DCA54C3825E55815001B2887 /* DropboxConfigExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxConfigExtensions.swift; sourceTree = "<group>"; };
 		DCB5317625E6598900C45B20 /* DropboxConfigExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxConfigExtensions.swift; sourceTree = "<group>"; };
+		DCB5318525E65DEA00C45B20 /* SecureTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTypes.swift; sourceTree = "<group>"; };
 		DCBFFE8B25DE9DB800B53888 /* swiftgen-localization.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "swiftgen-localization.yml"; sourceTree = "<group>"; };
 		DCBFFE8C25DE9DB800B53888 /* RunSwiftGen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = RunSwiftGen.sh; sourceTree = "<group>"; };
 		DCBFFE8D25DE9DB800B53888 /* swiftgen-assets.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "swiftgen-assets.yml"; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 				DCA54BE925E5374C001B2887 /* AppleCloudStorageExtensions.swift */,
 				DCA54BEA25E5374C001B2887 /* DropboxTestConfig.swift */,
 				DCA54BEB25E5374C001B2887 /* Types.swift */,
+				DCB5318525E65DEA00C45B20 /* SecureTypes.swift */,
 			);
 			path = HelpersAndExtensions;
 			sourceTree = "<group>";
@@ -792,6 +795,7 @@
 			files = (
 				DCA54BF225E5374C001B2887 /* TextFile.swift in Sources */,
 				DCA54BF725E5374C001B2887 /* CloudServiceControllerTests.swift in Sources */,
+				DCB5318625E65DEA00C45B20 /* SecureTypes.swift in Sources */,
 				DCA54BF125E5374C001B2887 /* TextFileManager.swift in Sources */,
 				DCA54BF825E5374C001B2887 /* DropboxCloudStorageControllerTests.swift in Sources */,
 				DCA54BF325E5374C001B2887 /* AppleCloudStorageExtensions.swift in Sources */,
