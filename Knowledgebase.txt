@@ -1,0 +1,36 @@
+
+Knowledgebase.txt
+==================
+
+I'm basically synthesizing a solution based on these 2 getting started articles:
+
+A)  https://theswiftdev.com/how-to-use-icloud-drive-documents/
+B)  https://www.appcoda.com/files-app-integration/
+
+
+I'm following mostly A, but B provides a bit of extra info.  A circumvents all the UIDocument stuff, which is I believe the better approach since when we compare to a dropbox sync, I will always ask for the latest status, and don't need "realtime updates".
+
+
+In addition, followed this answer, not just for the added Info.plist entries, but all 3 steps given there.
+
+https://stackoverflow.com/a/29886806/421797
+
+
+IF, in the Settings App > iCloud > Manage Storage, the associated name seems to be taken from a 'technical' string, and is not a 'user facing' string, there's this info about that:
+
+https://stackoverflow.com/a/10167614/421797
+
+Basically says, should rectify itself once the app goes live.
+
+Xcode Variables available to Bash Scripts
+-----------------------------------------
+
+https://help.apple.com/xcode/mac/8.0/#/itcaec37c2a6
+
+
+iCLOUD
+------
+
+iCloud is a pain in the butt.  Basically, you'll have to keep track locally of whether a file has been synced to iCloud before, so that if the iCloud folder contents does not have a file (remote) that you have (local), you need to be able to know if it's because that file was deleted from iCloud or if it's because it was never known to iCloud and thus needs to be uploaded.
+
+

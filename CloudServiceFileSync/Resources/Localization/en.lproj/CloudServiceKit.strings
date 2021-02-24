@@ -1,0 +1,23 @@
+/* 
+  CloudServiceKit.strings
+  CloudSyncSandbox
+
+  Created by Stephen O'Connor on 18.02.21.
+  
+*/
+
+"CloudServiceController.Sync.preparing" = "Preparing to sync...";
+"CloudServiceController.Sync.syncingFile" = "Syncing...";
+"CloudServiceController.Sync.details.uploadResult.filename.success" = "%@ - UPLOAD - %@";
+"CloudServiceController.Sync.details.downloadResult.filename.success" = "%@ - DOWNLOAD - %@";
+"CloudServiceController.Sync.details.deleteResult.filename.success" = "%@ - DELETE - %@";
+"CloudServiceController.Sync.couldNotBegin.auth" = "Unable to sync.  You aren't signed in to your cloud service.";
+"CloudServiceController.Sync.couldNotBegin.other" = "Unable to sync.  The sync manager reports not being ready, perhaps because of a failure last time it tried to sync.";
+
+
+"Words.succeeded" = "succeeded";
+"Words.failed" = "failed";
+"Words.OK" = "OK";
+"Words.Cancel" = "Cancel";
+
+

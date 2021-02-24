@@ -1,0 +1,41 @@
+To do
+======
+
+
+- Investigate why Settings > iCloud > Manage Storage might not display the app name, but takes its value from the iCloud container name, even though the NSUbiquitousContainers part of Info.plist specifies the folder name...
+
+- Make sure your list function on iCloud is only listing non-hidden files, or you can specify what should be in the list.
+    - I had a temp file that I didn't create called ".TestFile.txt.iCloud"
+    
+- Things you need to consider:
+    - a CloudStorageController doesn't do everything on its own.  It's dumb and should do what a CloudServiceController tells it to
+    - Thus, you have to consider if a Syncable changes its infos (especially the count!), the CloudServiceController will know how to do housekeeping.
+        - Write a test first
+
+
+# You have to think about fileURLs and maybe make them more explicit on a SyncableFileInfo
+
+for example, you'll have filename
+
+but then maybe remoteFileURL and localFileURL and they both be optional but at least one will always be defined.
+
+WHY?  When you list the application folder, if they only have remoteURL then it's clear that you still need to match it up on the local side.
+
+# SyncableFileInfo might have to be a class type.  I'm passing them around in arrays a lot
+# Add Progress Block update callbacks
+
+- Not sure threading is safe.  Running testSimpleSync will show some funky Sync numbers:
+
+4/8: Syncing... - C.txt - UPLOAD - succeeded
+5/8: Syncing... - E.txt - DELETE - succeeded
+8/8: Syncing... - D.txt - DOWNLOAD - succeeded
+8/8: Syncing... - A.txt - DOWNLOAD - succeeded
+8/8: Syncing... - I.txt - DOWNLOAD - succeeded
+
+But then sometimes it's correct.  So there's some sort of non thread safe activity going on...
+- or it's just with respect to the variable getting written to and read from.  Still.  Why? I'm adding work items to queues.
+
+
+Make sure updatedAt fields are getting updated appropriately.
+
+Also really be clear on where the SyncableFileInfos originated (local or remote)  (consider a property or a subclass)

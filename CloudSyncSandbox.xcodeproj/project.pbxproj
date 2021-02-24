@@ -1,0 +1,1166 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20A49FCA6C0A8D3DC6FDDA72 /* Pods_CloudServiceFileSyncTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11CEC888D95C38AEE419840 /* Pods_CloudServiceFileSyncTests.framework */; };
+		C42431F24248372E8F6D2C09 /* Pods_CloudSync_CloudSyncSandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15667C5D8D6F4A3008C1F98 /* Pods_CloudSync_CloudSyncSandbox.framework */; };
+		C88FB02F45E367232F1DD864 /* Pods_CloudSync_CloudServiceFileSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE602344190CE7252D9BAFA /* Pods_CloudSync_CloudServiceFileSync.framework */; };
+		DCA54B8B25E535CF001B2887 /* CloudServiceFileSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA54B8225E535CF001B2887 /* CloudServiceFileSync.framework */; };
+		DCA54B9425E535CF001B2887 /* CloudServiceFileSync.h in Headers */ = {isa = PBXBuildFile; fileRef = DCA54B8425E535CF001B2887 /* CloudServiceFileSync.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCA54B9725E535CF001B2887 /* CloudServiceFileSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA54B8225E535CF001B2887 /* CloudServiceFileSync.framework */; };
+		DCA54B9825E535CF001B2887 /* CloudServiceFileSync.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCA54B8225E535CF001B2887 /* CloudServiceFileSync.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCA54BC425E53697001B2887 /* CloudServiceKit.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCA54BA525E53697001B2887 /* CloudServiceKit.strings */; };
+		DCA54BC525E53697001B2887 /* SyncableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BA925E53697001B2887 /* SyncableProtocol.swift */; };
+		DCA54BC625E53697001B2887 /* SyncableFileInfoComparisonResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BAA25E53697001B2887 /* SyncableFileInfoComparisonResult.swift */; };
+		DCA54BC725E53697001B2887 /* SyncableFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BAB25E53697001B2887 /* SyncableFileInfo.swift */; };
+		DCA54BC825E53697001B2887 /* CloudServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BAC25E53697001B2887 /* CloudServiceController.swift */; };
+		DCA54BC925E53697001B2887 /* CloudSyncControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BAD25E53697001B2887 /* CloudSyncControllerProtocol.swift */; };
+		DCA54BCA25E53697001B2887 /* SyncError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BAE25E53697001B2887 /* SyncError.swift */; };
+		DCA54BCB25E53697001B2887 /* AppFileHandlingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BAF25E53697001B2887 /* AppFileHandlingProtocol.swift */; };
+		DCA54BCC25E53697001B2887 /* MimeTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BB025E53697001B2887 /* MimeTypes.swift */; };
+		DCA54BCD25E53697001B2887 /* AppleCloudConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BB325E53697001B2887 /* AppleCloudConfig.swift */; };
+		DCA54BCE25E53697001B2887 /* AppleCloudStorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BB425E53697001B2887 /* AppleCloudStorageController.swift */; };
+		DCA54BCF25E53697001B2887 /* DropboxError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BB625E53697001B2887 /* DropboxError.swift */; };
+		DCA54BD025E53697001B2887 /* DropboxCloudStorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BB725E53697001B2887 /* DropboxCloudStorageController.swift */; };
+		DCA54BD125E53697001B2887 /* DropboxConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BB825E53697001B2887 /* DropboxConfig.swift */; };
+		DCA54BD225E53697001B2887 /* SwiftyDropboxExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BB925E53697001B2887 /* SwiftyDropboxExtensions.swift */; };
+		DCA54BD425E53697001B2887 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BBC25E53697001B2887 /* Assets.swift */; };
+		DCA54BD525E53697001B2887 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BBD25E53697001B2887 /* L10n.swift */; };
+		DCA54BD625E53697001B2887 /* SimpleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BBF25E53697001B2887 /* SimpleLogger.swift */; };
+		DCA54BD725E53697001B2887 /* swiftgen-localization.yml in Resources */ = {isa = PBXBuildFile; fileRef = DCA54BC125E53697001B2887 /* swiftgen-localization.yml */; };
+		DCA54BD825E53697001B2887 /* swiftgen-assets.yml in Resources */ = {isa = PBXBuildFile; fileRef = DCA54BC225E53697001B2887 /* swiftgen-assets.yml */; };
+		DCA54BD925E53697001B2887 /* RunSwiftGen.sh in Resources */ = {isa = PBXBuildFile; fileRef = DCA54BC325E53697001B2887 /* RunSwiftGen.sh */; };
+		DCA54BF025E5374C001B2887 /* MockCloudStorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BE625E5374C001B2887 /* MockCloudStorageController.swift */; };
+		DCA54BF125E5374C001B2887 /* TextFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BE725E5374C001B2887 /* TextFileManager.swift */; };
+		DCA54BF225E5374C001B2887 /* TextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BE825E5374C001B2887 /* TextFile.swift */; };
+		DCA54BF325E5374C001B2887 /* AppleCloudStorageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BE925E5374C001B2887 /* AppleCloudStorageExtensions.swift */; };
+		DCA54BF425E5374C001B2887 /* DropboxTestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BEA25E5374C001B2887 /* DropboxTestConfig.swift */; };
+		DCA54BF525E5374C001B2887 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BEB25E5374C001B2887 /* Types.swift */; };
+		DCA54BF625E5374C001B2887 /* AppleCloudStorageControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BED25E5374C001B2887 /* AppleCloudStorageControllerTests.swift */; };
+		DCA54BF725E5374C001B2887 /* CloudServiceControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BEE25E5374C001B2887 /* CloudServiceControllerTests.swift */; };
+		DCA54BF825E5374C001B2887 /* DropboxCloudStorageControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54BEF25E5374C001B2887 /* DropboxCloudStorageControllerTests.swift */; };
+		DCA54C2225E53BE2001B2887 /* CloudServiceFileSync.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DCA54C2125E53BE2001B2887 /* CloudServiceFileSync.podspec */; };
+		DCA54C3925E55815001B2887 /* DropboxConfigExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA54C3825E55815001B2887 /* DropboxConfigExtensions.swift */; };
+		DCB5317825E6598900C45B20 /* DropboxConfigExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB5317625E6598900C45B20 /* DropboxConfigExtensions.swift */; };
+		DCE0372025D580AE002803DE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DCE0371F25D580AE002803DE /* README.md */; };
+		DCE0376A25DA7ED2002803DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE0375F25DA7ED2002803DE /* Assets.xcassets */; };
+		DCE0376B25DA7ED2002803DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE0376025DA7ED2002803DE /* LaunchScreen.storyboard */; };
+		DCE0376C25DA7ED2002803DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE0376225DA7ED2002803DE /* Main.storyboard */; };
+		DCE0376E25DA7ED2002803DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE0376625DA7ED2002803DE /* AppDelegate.swift */; };
+		DCE0376F25DA7ED2002803DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE0376825DA7ED2002803DE /* ViewController.swift */; };
+		DCE0379E25DA9694002803DE /* SimpleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE0379D25DA9694002803DE /* SimpleLogger.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCA54B8C25E535CF001B2887 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE036FB25D57F4E002803DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCA54B8125E535CF001B2887;
+			remoteInfo = CloudServiceFileSync;
+		};
+		DCA54B8E25E535CF001B2887 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE036FB25D57F4E002803DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCE0370225D57F4E002803DE;
+			remoteInfo = CloudSyncSandbox;
+		};
+		DCA54B9525E535CF001B2887 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCE036FB25D57F4E002803DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCA54B8125E535CF001B2887;
+			remoteInfo = CloudServiceFileSync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCA54B9C25E535CF001B2887 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DCA54B9825E535CF001B2887 /* CloudServiceFileSync.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D2A7A55F95360412E6A188E /* Pods-CloudSyncSandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSyncSandbox.debug.xcconfig"; path = "Target Support Files/Pods-CloudSyncSandbox/Pods-CloudSyncSandbox.debug.xcconfig"; sourceTree = "<group>"; };
+		1E779EA6DFFCA37727D08D79 /* Pods-CloudSyncSandbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSyncSandbox.release.xcconfig"; path = "Target Support Files/Pods-CloudSyncSandbox/Pods-CloudSyncSandbox.release.xcconfig"; sourceTree = "<group>"; };
+		256F3848D4B6E0711A19601A /* Pods-CloudServiceFileSyncTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudServiceFileSyncTests.release.xcconfig"; path = "Target Support Files/Pods-CloudServiceFileSyncTests/Pods-CloudServiceFileSyncTests.release.xcconfig"; sourceTree = "<group>"; };
+		3111ECE7628E170D31F11CC1 /* Pods-CloudSyncSandboxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSyncSandboxTests.debug.xcconfig"; path = "Target Support Files/Pods-CloudSyncSandboxTests/Pods-CloudSyncSandboxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A71AF74D822683431D1968F /* Pods-CloudSync-CloudSyncSandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSync-CloudSyncSandbox.debug.xcconfig"; path = "Target Support Files/Pods-CloudSync-CloudSyncSandbox/Pods-CloudSync-CloudSyncSandbox.debug.xcconfig"; sourceTree = "<group>"; };
+		3A8881CD264EEA7B82636937 /* Pods-CloudSync-CloudSyncSandbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSync-CloudSyncSandbox.release.xcconfig"; path = "Target Support Files/Pods-CloudSync-CloudSyncSandbox/Pods-CloudSync-CloudSyncSandbox.release.xcconfig"; sourceTree = "<group>"; };
+		509B66B933E62D130528C79A /* Pods-CloudServiceFileSyncTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudServiceFileSyncTests.debug.xcconfig"; path = "Target Support Files/Pods-CloudServiceFileSyncTests/Pods-CloudServiceFileSyncTests.debug.xcconfig"; sourceTree = "<group>"; };
+		538386D9CB693B11C1041499 /* Pods_CloudSyncSandboxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudSyncSandboxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE602344190CE7252D9BAFA /* Pods_CloudSync_CloudServiceFileSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudSync_CloudServiceFileSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7484924BCB5C7E34C43A0D79 /* Pods-CloudSync-CloudServiceFileSync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSync-CloudServiceFileSync.release.xcconfig"; path = "Target Support Files/Pods-CloudSync-CloudServiceFileSync/Pods-CloudSync-CloudServiceFileSync.release.xcconfig"; sourceTree = "<group>"; };
+		98813F43517E3EB5835FE526 /* Pods-CloudSyncSandboxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSyncSandboxTests.release.xcconfig"; path = "Target Support Files/Pods-CloudSyncSandboxTests/Pods-CloudSyncSandboxTests.release.xcconfig"; sourceTree = "<group>"; };
+		B11CEC888D95C38AEE419840 /* Pods_CloudServiceFileSyncTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudServiceFileSyncTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCA54B5525E3B26A001B2887 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DCA54B8225E535CF001B2887 /* CloudServiceFileSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CloudServiceFileSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCA54B8425E535CF001B2887 /* CloudServiceFileSync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloudServiceFileSync.h; sourceTree = "<group>"; };
+		DCA54B8525E535CF001B2887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCA54B8A25E535CF001B2887 /* CloudServiceFileSyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudServiceFileSyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCA54B9325E535CF001B2887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCA54BA625E53697001B2887 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CloudServiceKit.strings; sourceTree = "<group>"; };
+		DCA54BA925E53697001B2887 /* SyncableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncableProtocol.swift; sourceTree = "<group>"; };
+		DCA54BAA25E53697001B2887 /* SyncableFileInfoComparisonResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncableFileInfoComparisonResult.swift; sourceTree = "<group>"; };
+		DCA54BAB25E53697001B2887 /* SyncableFileInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncableFileInfo.swift; sourceTree = "<group>"; };
+		DCA54BAC25E53697001B2887 /* CloudServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudServiceController.swift; sourceTree = "<group>"; };
+		DCA54BAD25E53697001B2887 /* CloudSyncControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudSyncControllerProtocol.swift; sourceTree = "<group>"; };
+		DCA54BAE25E53697001B2887 /* SyncError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncError.swift; sourceTree = "<group>"; };
+		DCA54BAF25E53697001B2887 /* AppFileHandlingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFileHandlingProtocol.swift; sourceTree = "<group>"; };
+		DCA54BB025E53697001B2887 /* MimeTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimeTypes.swift; sourceTree = "<group>"; };
+		DCA54BB325E53697001B2887 /* AppleCloudConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleCloudConfig.swift; sourceTree = "<group>"; };
+		DCA54BB425E53697001B2887 /* AppleCloudStorageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleCloudStorageController.swift; sourceTree = "<group>"; };
+		DCA54BB625E53697001B2887 /* DropboxError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxError.swift; sourceTree = "<group>"; };
+		DCA54BB725E53697001B2887 /* DropboxCloudStorageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxCloudStorageController.swift; sourceTree = "<group>"; };
+		DCA54BB825E53697001B2887 /* DropboxConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxConfig.swift; sourceTree = "<group>"; };
+		DCA54BB925E53697001B2887 /* SwiftyDropboxExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyDropboxExtensions.swift; sourceTree = "<group>"; };
+		DCA54BBC25E53697001B2887 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		DCA54BBD25E53697001B2887 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		DCA54BBF25E53697001B2887 /* SimpleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleLogger.swift; sourceTree = "<group>"; };
+		DCA54BC125E53697001B2887 /* swiftgen-localization.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "swiftgen-localization.yml"; sourceTree = "<group>"; };
+		DCA54BC225E53697001B2887 /* swiftgen-assets.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "swiftgen-assets.yml"; sourceTree = "<group>"; };
+		DCA54BC325E53697001B2887 /* RunSwiftGen.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunSwiftGen.sh; sourceTree = "<group>"; };
+		DCA54BE625E5374C001B2887 /* MockCloudStorageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCloudStorageController.swift; sourceTree = "<group>"; };
+		DCA54BE725E5374C001B2887 /* TextFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFileManager.swift; sourceTree = "<group>"; };
+		DCA54BE825E5374C001B2887 /* TextFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFile.swift; sourceTree = "<group>"; };
+		DCA54BE925E5374C001B2887 /* AppleCloudStorageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleCloudStorageExtensions.swift; sourceTree = "<group>"; };
+		DCA54BEA25E5374C001B2887 /* DropboxTestConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxTestConfig.swift; sourceTree = "<group>"; };
+		DCA54BEB25E5374C001B2887 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		DCA54BED25E5374C001B2887 /* AppleCloudStorageControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleCloudStorageControllerTests.swift; sourceTree = "<group>"; };
+		DCA54BEE25E5374C001B2887 /* CloudServiceControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudServiceControllerTests.swift; sourceTree = "<group>"; };
+		DCA54BEF25E5374C001B2887 /* DropboxCloudStorageControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxCloudStorageControllerTests.swift; sourceTree = "<group>"; };
+		DCA54C2125E53BE2001B2887 /* CloudServiceFileSync.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CloudServiceFileSync.podspec; sourceTree = "<group>"; };
+		DCA54C3825E55815001B2887 /* DropboxConfigExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxConfigExtensions.swift; sourceTree = "<group>"; };
+		DCB5317625E6598900C45B20 /* DropboxConfigExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxConfigExtensions.swift; sourceTree = "<group>"; };
+		DCBFFE8B25DE9DB800B53888 /* swiftgen-localization.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "swiftgen-localization.yml"; sourceTree = "<group>"; };
+		DCBFFE8C25DE9DB800B53888 /* RunSwiftGen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = RunSwiftGen.sh; sourceTree = "<group>"; };
+		DCBFFE8D25DE9DB800B53888 /* swiftgen-assets.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "swiftgen-assets.yml"; sourceTree = "<group>"; };
+		DCE0370325D57F4E002803DE /* CloudSyncSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudSyncSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE0371425D57F54002803DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE0371C25D57FAB002803DE /* CloudSyncSandbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudSyncSandbox.entitlements; sourceTree = "<group>"; };
+		DCE0371F25D580AE002803DE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DCE0372525DA7B78002803DE /* Knowledgebase.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Knowledgebase.txt; sourceTree = "<group>"; };
+		DCE0375F25DA7ED2002803DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCE0376125DA7ED2002803DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCE0376325DA7ED2002803DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCE0376625DA7ED2002803DE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCE0376825DA7ED2002803DE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCE0379D25DA9694002803DE /* SimpleLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLogger.swift; sourceTree = "<group>"; };
+		DCE037A725DBF326002803DE /* ToDo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; };
+		F15667C5D8D6F4A3008C1F98 /* Pods_CloudSync_CloudSyncSandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudSync_CloudSyncSandbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6240401473B2B0033C37F4 /* Pods-CloudSync-CloudServiceFileSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudSync-CloudServiceFileSync.debug.xcconfig"; path = "Target Support Files/Pods-CloudSync-CloudServiceFileSync/Pods-CloudSync-CloudServiceFileSync.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCA54B7F25E535CF001B2887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C88FB02F45E367232F1DD864 /* Pods_CloudSync_CloudServiceFileSync.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCA54B8725E535CF001B2887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA54B8B25E535CF001B2887 /* CloudServiceFileSync.framework in Frameworks */,
+				20A49FCA6C0A8D3DC6FDDA72 /* Pods_CloudServiceFileSyncTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE0370025D57F4E002803DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42431F24248372E8F6D2C09 /* Pods_CloudSync_CloudSyncSandbox.framework in Frameworks */,
+				DCA54B9725E535CF001B2887 /* CloudServiceFileSync.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		225824F30E576E2AF9601C46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F15667C5D8D6F4A3008C1F98 /* Pods_CloudSync_CloudSyncSandbox.framework */,
+				538386D9CB693B11C1041499 /* Pods_CloudSyncSandboxTests.framework */,
+				B11CEC888D95C38AEE419840 /* Pods_CloudServiceFileSyncTests.framework */,
+				6BE602344190CE7252D9BAFA /* Pods_CloudSync_CloudServiceFileSync.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69553E13D0BEED83944160F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D2A7A55F95360412E6A188E /* Pods-CloudSyncSandbox.debug.xcconfig */,
+				1E779EA6DFFCA37727D08D79 /* Pods-CloudSyncSandbox.release.xcconfig */,
+				3A71AF74D822683431D1968F /* Pods-CloudSync-CloudSyncSandbox.debug.xcconfig */,
+				3A8881CD264EEA7B82636937 /* Pods-CloudSync-CloudSyncSandbox.release.xcconfig */,
+				3111ECE7628E170D31F11CC1 /* Pods-CloudSyncSandboxTests.debug.xcconfig */,
+				98813F43517E3EB5835FE526 /* Pods-CloudSyncSandboxTests.release.xcconfig */,
+				509B66B933E62D130528C79A /* Pods-CloudServiceFileSyncTests.debug.xcconfig */,
+				256F3848D4B6E0711A19601A /* Pods-CloudServiceFileSyncTests.release.xcconfig */,
+				FA6240401473B2B0033C37F4 /* Pods-CloudSync-CloudServiceFileSync.debug.xcconfig */,
+				7484924BCB5C7E34C43A0D79 /* Pods-CloudSync-CloudServiceFileSync.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DCA54B8325E535CF001B2887 /* CloudServiceFileSync */ = {
+			isa = PBXGroup;
+			children = (
+				DCA54B8425E535CF001B2887 /* CloudServiceFileSync.h */,
+				DCA54B8525E535CF001B2887 /* Info.plist */,
+				DCA54BC025E53697001B2887 /* Pipelines */,
+				DCA54BA325E53697001B2887 /* Resources */,
+				DCA54BA725E53697001B2887 /* Source */,
+			);
+			path = CloudServiceFileSync;
+			sourceTree = "<group>";
+		};
+		DCA54B9025E535CF001B2887 /* CloudServiceFileSyncTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCA54BE525E5374C001B2887 /* HelpersAndExtensions */,
+				DCA54BEC25E5374C001B2887 /* Tests */,
+				DCA54B9325E535CF001B2887 /* Info.plist */,
+			);
+			path = CloudServiceFileSyncTests;
+			sourceTree = "<group>";
+		};
+		DCA54BA325E53697001B2887 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DCA54BA425E53697001B2887 /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DCA54BA425E53697001B2887 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				DCA54BA525E53697001B2887 /* CloudServiceKit.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		DCA54BA725E53697001B2887 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DCA54BBB25E53697001B2887 /* _generated */,
+				DCA54BA825E53697001B2887 /* ProtocolsAndTypes */,
+				DCA54BB125E53697001B2887 /* CloudServices */,
+				DCA54BBE25E53697001B2887 /* Utility */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DCA54BA825E53697001B2887 /* ProtocolsAndTypes */ = {
+			isa = PBXGroup;
+			children = (
+				DCA54BA925E53697001B2887 /* SyncableProtocol.swift */,
+				DCA54BAA25E53697001B2887 /* SyncableFileInfoComparisonResult.swift */,
+				DCA54BAB25E53697001B2887 /* SyncableFileInfo.swift */,
+				DCA54BAC25E53697001B2887 /* CloudServiceController.swift */,
+				DCA54BAD25E53697001B2887 /* CloudSyncControllerProtocol.swift */,
+				DCA54BAE25E53697001B2887 /* SyncError.swift */,
+				DCA54BAF25E53697001B2887 /* AppFileHandlingProtocol.swift */,
+				DCA54BB025E53697001B2887 /* MimeTypes.swift */,
+			);
+			path = ProtocolsAndTypes;
+			sourceTree = "<group>";
+		};
+		DCA54BB125E53697001B2887 /* CloudServices */ = {
+			isa = PBXGroup;
+			children = (
+				DCA54BB225E53697001B2887 /* AppleCloud */,
+				DCA54BB525E53697001B2887 /* Dropbox */,
+			);
+			path = CloudServices;
+			sourceTree = "<group>";
+		};
+		DCA54BB225E53697001B2887 /* AppleCloud */ = {
+			isa = PBXGroup;
+			children = (
+				DCA54BB325E53697001B2887 /* AppleCloudConfig.swift */,
+				DCA54BB425E53697001B2887 /* AppleCloudStorageController.swift */,
+			);
+			path = AppleCloud;
+			sourceTree = "<group>";
+		};
+		DCA54BB525E53697001B2887 /* Dropbox */ = {
+			isa = PBXGroup;
+			children = (
+				DCA54C3725E557E8001B2887 /* src-ignore */,
+				DCA54BB625E53697001B2887 /* DropboxError.swift */,
+				DCA54BB825E53697001B2887 /* DropboxConfig.swift */,
+				DCA54BB725E53697001B2887 /* DropboxCloudStorageController.swift */,
+				DCA54BB925E53697001B2887 /* SwiftyDropboxExtensions.swift */,
+			);
+			path = Dropbox;
+			sourceTree = "<group>";
+		};
+		DCA54BBB25E53697001B2887 /* _generated */ = {
+			isa = PBXGroup;
+			children = (
+				DCA54BBC25E53697001B2887 /* Assets.swift */,
+				DCA54BBD25E53697001B2887 /* L10n.swift */,
+			);
+			path = _generated;
+			sourceTree = "<group>";
+		};
+		DCA54BBE25E53697001B2887 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DCA54BBF25E53697001B2887 /* SimpleLogger.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		DCA54BC025E53697001B2887 /* Pipelines */ = {
+			isa = PBXGroup;
+			children = (
+				DCA54BC125E53697001B2887 /* swiftgen-localization.yml */,
+				DCA54BC225E53697001B2887 /* swiftgen-assets.yml */,
+				DCA54BC325E53697001B2887 /* RunSwiftGen.sh */,
+			);
+			path = Pipelines;
+			sourceTree = "<group>";
+		};
+		DCA54BE525E5374C001B2887 /* HelpersAndExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				DCA54BE625E5374C001B2887 /* MockCloudStorageController.swift */,
+				DCA54BE725E5374C001B2887 /* TextFileManager.swift */,
+				DCA54BE825E5374C001B2887 /* TextFile.swift */,
+				DCA54BE925E5374C001B2887 /* AppleCloudStorageExtensions.swift */,
+				DCA54BEA25E5374C001B2887 /* DropboxTestConfig.swift */,
+				DCA54BEB25E5374C001B2887 /* Types.swift */,
+			);
+			path = HelpersAndExtensions;
+			sourceTree = "<group>";
+		};
+		DCA54BEC25E5374C001B2887 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DCA54BED25E5374C001B2887 /* AppleCloudStorageControllerTests.swift */,
+				DCA54BEE25E5374C001B2887 /* CloudServiceControllerTests.swift */,
+				DCA54BEF25E5374C001B2887 /* DropboxCloudStorageControllerTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		DCA54C3725E557E8001B2887 /* src-ignore */ = {
+			isa = PBXGroup;
+			children = (
+				DCA54C3825E55815001B2887 /* DropboxConfigExtensions.swift */,
+			);
+			path = "src-ignore";
+			sourceTree = "<group>";
+		};
+		DCB5317525E6598900C45B20 /* src-ignore */ = {
+			isa = PBXGroup;
+			children = (
+				DCB5317625E6598900C45B20 /* DropboxConfigExtensions.swift */,
+			);
+			path = "src-ignore";
+			sourceTree = "<group>";
+		};
+		DCBFFE8A25DE9D8900B53888 /* Pipelines */ = {
+			isa = PBXGroup;
+			children = (
+				DCBFFE8C25DE9DB800B53888 /* RunSwiftGen.sh */,
+				DCBFFE8D25DE9DB800B53888 /* swiftgen-assets.yml */,
+				DCBFFE8B25DE9DB800B53888 /* swiftgen-localization.yml */,
+			);
+			path = Pipelines;
+			sourceTree = "<group>";
+		};
+		DCE036FA25D57F4E002803DE = {
+			isa = PBXGroup;
+			children = (
+				DCE037A725DBF326002803DE /* ToDo.txt */,
+				DCE0372525DA7B78002803DE /* Knowledgebase.txt */,
+				DCE0371F25D580AE002803DE /* README.md */,
+				DCA54B5525E3B26A001B2887 /* Podfile */,
+				DCA54C2125E53BE2001B2887 /* CloudServiceFileSync.podspec */,
+				DCE0370525D57F4E002803DE /* CloudSyncSandbox */,
+				DCA54B8325E535CF001B2887 /* CloudServiceFileSync */,
+				DCA54B9025E535CF001B2887 /* CloudServiceFileSyncTests */,
+				DCE0370425D57F4E002803DE /* Products */,
+				69553E13D0BEED83944160F1 /* Pods */,
+				225824F30E576E2AF9601C46 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DCE0370425D57F4E002803DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCE0370325D57F4E002803DE /* CloudSyncSandbox.app */,
+				DCA54B8225E535CF001B2887 /* CloudServiceFileSync.framework */,
+				DCA54B8A25E535CF001B2887 /* CloudServiceFileSyncTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCE0370525D57F4E002803DE /* CloudSyncSandbox */ = {
+			isa = PBXGroup;
+			children = (
+				DCE0371C25D57FAB002803DE /* CloudSyncSandbox.entitlements */,
+				DCE0371425D57F54002803DE /* Info.plist */,
+				DCBFFE8A25DE9D8900B53888 /* Pipelines */,
+				DCE0375E25DA7ED2002803DE /* Resources */,
+				DCE0376425DA7ED2002803DE /* Source */,
+			);
+			path = CloudSyncSandbox;
+			sourceTree = "<group>";
+		};
+		DCE0375E25DA7ED2002803DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DCE0375F25DA7ED2002803DE /* Assets.xcassets */,
+				DCE0376025DA7ED2002803DE /* LaunchScreen.storyboard */,
+				DCE0376225DA7ED2002803DE /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DCE0376425DA7ED2002803DE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DCE0376625DA7ED2002803DE /* AppDelegate.swift */,
+				DCE0379C25DA968A002803DE /* Utility */,
+				DCE0376725DA7ED2002803DE /* ViewController */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DCE0376725DA7ED2002803DE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DCE0376825DA7ED2002803DE /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DCE0379C25DA968A002803DE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DCB5317525E6598900C45B20 /* src-ignore */,
+				DCE0379D25DA9694002803DE /* SimpleLogger.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DCA54B7D25E535CF001B2887 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA54B9425E535CF001B2887 /* CloudServiceFileSync.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DCA54B8125E535CF001B2887 /* CloudServiceFileSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCA54B9925E535CF001B2887 /* Build configuration list for PBXNativeTarget "CloudServiceFileSync" */;
+			buildPhases = (
+				D661ACC55C247132F76F0CDA /* [CP] Check Pods Manifest.lock */,
+				DCA54B7D25E535CF001B2887 /* Headers */,
+				DCA54BDD25E536B2001B2887 /* Run Script - SwiftGen (Localization Constants) */,
+				DCA54BDE25E53700001B2887 /* Run Script - Highlight Errors and Warnings */,
+				DCA54B7E25E535CF001B2887 /* Sources */,
+				DCA54B7F25E535CF001B2887 /* Frameworks */,
+				DCA54B8025E535CF001B2887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudServiceFileSync;
+			productName = CloudServiceFileSync;
+			productReference = DCA54B8225E535CF001B2887 /* CloudServiceFileSync.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DCA54B8925E535CF001B2887 /* CloudServiceFileSyncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCA54B9D25E535CF001B2887 /* Build configuration list for PBXNativeTarget "CloudServiceFileSyncTests" */;
+			buildPhases = (
+				70E9CF930B752379294B7E56 /* [CP] Check Pods Manifest.lock */,
+				DCA54B8625E535CF001B2887 /* Sources */,
+				DCA54B8725E535CF001B2887 /* Frameworks */,
+				DCA54B8825E535CF001B2887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCA54B8D25E535CF001B2887 /* PBXTargetDependency */,
+				DCA54B8F25E535CF001B2887 /* PBXTargetDependency */,
+			);
+			name = CloudServiceFileSyncTests;
+			productName = CloudServiceFileSyncTests;
+			productReference = DCA54B8A25E535CF001B2887 /* CloudServiceFileSyncTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCE0370225D57F4E002803DE /* CloudSyncSandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCE0371725D57F54002803DE /* Build configuration list for PBXNativeTarget "CloudSyncSandbox" */;
+			buildPhases = (
+				31D4A8841A6A9ADAF02B6293 /* [CP] Check Pods Manifest.lock */,
+				DCD6605A25DD299B0078E557 /* Run Script - Highlight Errors and Warnings */,
+				DCE036FF25D57F4E002803DE /* Sources */,
+				DCE0370025D57F4E002803DE /* Frameworks */,
+				DCE0370125D57F4E002803DE /* Resources */,
+				0ADDE5C344BE44F7E8FC4044 /* [CP] Embed Pods Frameworks */,
+				DCA54B9C25E535CF001B2887 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCA54B9625E535CF001B2887 /* PBXTargetDependency */,
+			);
+			name = CloudSyncSandbox;
+			productName = CloudSyncSandbox;
+			productReference = DCE0370325D57F4E002803DE /* CloudSyncSandbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCE036FB25D57F4E002803DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					DCA54B8125E535CF001B2887 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					DCA54B8925E535CF001B2887 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = DCE0370225D57F4E002803DE;
+					};
+					DCE0370225D57F4E002803DE = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = DCE036FE25D57F4E002803DE /* Build configuration list for PBXProject "CloudSyncSandbox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCE036FA25D57F4E002803DE;
+			productRefGroup = DCE0370425D57F4E002803DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCE0370225D57F4E002803DE /* CloudSyncSandbox */,
+				DCA54B8125E535CF001B2887 /* CloudServiceFileSync */,
+				DCA54B8925E535CF001B2887 /* CloudServiceFileSyncTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCA54B8025E535CF001B2887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA54BD725E53697001B2887 /* swiftgen-localization.yml in Resources */,
+				DCA54BD825E53697001B2887 /* swiftgen-assets.yml in Resources */,
+				DCA54BC425E53697001B2887 /* CloudServiceKit.strings in Resources */,
+				DCA54BD925E53697001B2887 /* RunSwiftGen.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCA54B8825E535CF001B2887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE0370125D57F4E002803DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE0376B25DA7ED2002803DE /* LaunchScreen.storyboard in Resources */,
+				DCA54C2225E53BE2001B2887 /* CloudServiceFileSync.podspec in Resources */,
+				DCE0376A25DA7ED2002803DE /* Assets.xcassets in Resources */,
+				DCE0372025D580AE002803DE /* README.md in Resources */,
+				DCE0376C25DA7ED2002803DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ADDE5C344BE44F7E8FC4044 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CloudSync-CloudSyncSandbox/Pods-CloudSync-CloudSyncSandbox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CloudSync-CloudSyncSandbox/Pods-CloudSync-CloudSyncSandbox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CloudSync-CloudSyncSandbox/Pods-CloudSync-CloudSyncSandbox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31D4A8841A6A9ADAF02B6293 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudSync-CloudSyncSandbox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70E9CF930B752379294B7E56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudServiceFileSyncTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D661ACC55C247132F76F0CDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudSync-CloudServiceFileSync-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCA54BDD25E536B2001B2887 /* Run Script - SwiftGen (Localization Constants) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - SwiftGen (Localization Constants)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$SRCROOT/$PRODUCT_MODULE_NAME\"\n./Pipelines/RunSwiftGen.sh\n";
+		};
+		DCA54BDE25E53700001B2887 /* Run Script - Highlight Errors and Warnings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - Highlight Errors and Warnings";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:|WARNING:\"\nERRORTAG=\"ERROR:\"\n#Notice here we use the SongbookSimple subfolder.  This way it wont' generate warnings from Cocoapods\nfind \"${SRCROOT}/${PRODUCT_MODULE_NAME}/Source\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$|($ERRORTAG).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\" | perl -p -e \"s/($ERRORTAG)/ error: \\$1/\"\n\n";
+		};
+		DCD6605A25DD299B0078E557 /* Run Script - Highlight Errors and Warnings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - Highlight Errors and Warnings";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:|WARNING:\"\nERRORTAG=\"ERROR:\"\n#Notice here we use the SongbookSimple subfolder.  This way it wont' generate warnings from Cocoapods\nfind \"${SRCROOT}/${PRODUCT_MODULE_NAME}/Source\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$|($ERRORTAG).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\" | perl -p -e \"s/($ERRORTAG)/ error: \\$1/\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCA54B7E25E535CF001B2887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA54BCD25E53697001B2887 /* AppleCloudConfig.swift in Sources */,
+				DCA54BC625E53697001B2887 /* SyncableFileInfoComparisonResult.swift in Sources */,
+				DCA54BD125E53697001B2887 /* DropboxConfig.swift in Sources */,
+				DCA54BCF25E53697001B2887 /* DropboxError.swift in Sources */,
+				DCA54BD625E53697001B2887 /* SimpleLogger.swift in Sources */,
+				DCA54BCA25E53697001B2887 /* SyncError.swift in Sources */,
+				DCA54BD025E53697001B2887 /* DropboxCloudStorageController.swift in Sources */,
+				DCA54BCB25E53697001B2887 /* AppFileHandlingProtocol.swift in Sources */,
+				DCA54BC725E53697001B2887 /* SyncableFileInfo.swift in Sources */,
+				DCA54BD225E53697001B2887 /* SwiftyDropboxExtensions.swift in Sources */,
+				DCA54C3925E55815001B2887 /* DropboxConfigExtensions.swift in Sources */,
+				DCA54BD425E53697001B2887 /* Assets.swift in Sources */,
+				DCA54BC925E53697001B2887 /* CloudSyncControllerProtocol.swift in Sources */,
+				DCA54BCE25E53697001B2887 /* AppleCloudStorageController.swift in Sources */,
+				DCA54BC525E53697001B2887 /* SyncableProtocol.swift in Sources */,
+				DCA54BC825E53697001B2887 /* CloudServiceController.swift in Sources */,
+				DCA54BD525E53697001B2887 /* L10n.swift in Sources */,
+				DCA54BCC25E53697001B2887 /* MimeTypes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCA54B8625E535CF001B2887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA54BF225E5374C001B2887 /* TextFile.swift in Sources */,
+				DCA54BF725E5374C001B2887 /* CloudServiceControllerTests.swift in Sources */,
+				DCA54BF125E5374C001B2887 /* TextFileManager.swift in Sources */,
+				DCA54BF825E5374C001B2887 /* DropboxCloudStorageControllerTests.swift in Sources */,
+				DCA54BF325E5374C001B2887 /* AppleCloudStorageExtensions.swift in Sources */,
+				DCA54BF525E5374C001B2887 /* Types.swift in Sources */,
+				DCA54BF025E5374C001B2887 /* MockCloudStorageController.swift in Sources */,
+				DCA54BF625E5374C001B2887 /* AppleCloudStorageControllerTests.swift in Sources */,
+				DCA54BF425E5374C001B2887 /* DropboxTestConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE036FF25D57F4E002803DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB5317825E6598900C45B20 /* DropboxConfigExtensions.swift in Sources */,
+				DCE0376F25DA7ED2002803DE /* ViewController.swift in Sources */,
+				DCE0376E25DA7ED2002803DE /* AppDelegate.swift in Sources */,
+				DCE0379E25DA9694002803DE /* SimpleLogger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCA54B8D25E535CF001B2887 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCA54B8125E535CF001B2887 /* CloudServiceFileSync */;
+			targetProxy = DCA54B8C25E535CF001B2887 /* PBXContainerItemProxy */;
+		};
+		DCA54B8F25E535CF001B2887 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCE0370225D57F4E002803DE /* CloudSyncSandbox */;
+			targetProxy = DCA54B8E25E535CF001B2887 /* PBXContainerItemProxy */;
+		};
+		DCA54B9625E535CF001B2887 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCA54B8125E535CF001B2887 /* CloudServiceFileSync */;
+			targetProxy = DCA54B9525E535CF001B2887 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCA54BA525E53697001B2887 /* CloudServiceKit.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCA54BA625E53697001B2887 /* en */,
+			);
+			name = CloudServiceKit.strings;
+			sourceTree = "<group>";
+		};
+		DCE0376025DA7ED2002803DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCE0376125DA7ED2002803DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DCE0376225DA7ED2002803DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCE0376325DA7ED2002803DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCA54B9A25E535CF001B2887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA6240401473B2B0033C37F4 /* Pods-CloudSync-CloudServiceFileSync.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z76RWC6PEN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CloudServiceFileSync/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hometeamsoftware.CloudServiceFileSync;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DCA54B9B25E535CF001B2887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7484924BCB5C7E34C43A0D79 /* Pods-CloudSync-CloudServiceFileSync.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z76RWC6PEN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CloudServiceFileSync/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hometeamsoftware.CloudServiceFileSync;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DCA54B9E25E535CF001B2887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 509B66B933E62D130528C79A /* Pods-CloudServiceFileSyncTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z76RWC6PEN;
+				INFOPLIST_FILE = CloudServiceFileSyncTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hometeamsoftware.CloudServiceFileSyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudSyncSandbox.app/CloudSyncSandbox";
+			};
+			name = Debug;
+		};
+		DCA54B9F25E535CF001B2887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 256F3848D4B6E0711A19601A /* Pods-CloudServiceFileSyncTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z76RWC6PEN;
+				INFOPLIST_FILE = CloudServiceFileSyncTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hometeamsoftware.CloudServiceFileSyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudSyncSandbox.app/CloudSyncSandbox";
+			};
+			name = Release;
+		};
+		DCE0371525D57F54002803DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCE0371625D57F54002803DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCE0371825D57F54002803DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A71AF74D822683431D1968F /* Pods-CloudSync-CloudSyncSandbox.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloudSyncSandbox/CloudSyncSandbox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = Z76RWC6PEN;
+				INFOPLIST_FILE = CloudSyncSandbox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hometeamsoftware.icloudTutorial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCE0371925D57F54002803DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A8881CD264EEA7B82636937 /* Pods-CloudSync-CloudSyncSandbox.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CloudSyncSandbox/CloudSyncSandbox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = Z76RWC6PEN;
+				INFOPLIST_FILE = CloudSyncSandbox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hometeamsoftware.icloudTutorial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCA54B9925E535CF001B2887 /* Build configuration list for PBXNativeTarget "CloudServiceFileSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCA54B9A25E535CF001B2887 /* Debug */,
+				DCA54B9B25E535CF001B2887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCA54B9D25E535CF001B2887 /* Build configuration list for PBXNativeTarget "CloudServiceFileSyncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCA54B9E25E535CF001B2887 /* Debug */,
+				DCA54B9F25E535CF001B2887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCE036FE25D57F4E002803DE /* Build configuration list for PBXProject "CloudSyncSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE0371525D57F54002803DE /* Debug */,
+				DCE0371625D57F54002803DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCE0371725D57F54002803DE /* Build configuration list for PBXNativeTarget "CloudSyncSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCE0371825D57F54002803DE /* Debug */,
+				DCE0371925D57F54002803DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCE036FB25D57F4E002803DE /* Project object */;
+}

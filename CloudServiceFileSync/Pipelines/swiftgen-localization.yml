@@ -1,0 +1,5 @@
+strings:
+  inputs: ../Resources/Localization/en.lproj/CloudServiceKit.strings
+  outputs:
+    - templateName: structured-swift4
+      output: ../Source/_generated/L10n.swift
